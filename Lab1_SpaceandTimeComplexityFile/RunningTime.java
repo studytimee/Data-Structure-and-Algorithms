@@ -1,6 +1,12 @@
 
 public class RunningTime {
+	
 	public static void main(String[] args) throws Exception{
+			int inChar;
+			inChar = System.in.read();
+            System.out.print("You entered ");
+            System.out.println(inChar);
+		
 		System.out.println("----------  Lab 1: Space and Time Complexity ----------");
 		Dictionary dictionary = new Dictionary();
 		dictionary.load();
@@ -10,9 +16,9 @@ public class RunningTime {
 		long startTime = System.nanoTime();
 		
 		isArrayOver100(words);
-		//contains(words, "zebra");
-		//binarySearch(words, "zebra");
-		//containsDuplicates(words);
+		contains(words, "zebra");
+		binarySearch(words, "zebra");
+		containsDuplicates(words);
 		System.out.println("Running time (ns): " + (System.nanoTime() - startTime));
 		
 	}
